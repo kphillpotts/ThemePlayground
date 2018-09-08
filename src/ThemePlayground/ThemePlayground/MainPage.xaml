@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ThemePlayground.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ThemePlayground"
+    BackgroundColor="{DynamicResource BackgroundColor}">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+
+        <StackLayout Grid.Row="0">
+            <!--  Place new controls here  -->
+            <Label
+                x:Name="ThemeDisplayName"
+                Style="{DynamicResource H1Label}"
+                Text="{DynamicResource ThemeName}" />
+            <Label Style="{DynamicResource BodyLabel}" Text="Body" />
+        </StackLayout>
+
+        <Image Grid.Row="1" Source="{DynamicResource BackgroundImage}" Aspect="AspectFill" />
+
+        <StackLayout Grid.Row="2" Orientation="Horizontal" Padding="10">
+            <Picker
+                x:Name="ThemePicker"
+                Title="Select a theme"
+                HorizontalOptions="FillAndExpand"
+                SelectedIndexChanged="ThemePicker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Light</x:String>
+                    <x:String>Dark</x:String>
+                    <x:String>Rose</x:String>
+                    <x:String>Base</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>

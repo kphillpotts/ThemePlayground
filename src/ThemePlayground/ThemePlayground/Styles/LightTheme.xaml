@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="ThemePlayground.Styles.LightTheme"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:styles="clr-namespace:ThemePlayground.Styles">
+
+    <ResourceDictionary.MergedDictionaries>
+        <styles:BaseStyleResources />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  override some values form the base  -->
+    <x:String x:Key="ThemeName">Light</x:String>
+    <x:String x:Key="BackgroundImage">https://thechive.files.wordpress.com/2017/10/7de5222033964f81f606f91d5349ea0e-wade-wilson-wolverine.jpg</x:String>
+    
+
+    <Color x:Key="BackgroundColor">#EEEEEE</Color>
+    <Color x:Key="H1Color">#00FF00</Color>
+    <Color x:Key="BodyColor">#000000</Color>
+    <x:Double x:Key="BodySize">16</x:Double>
+</ResourceDictionary>

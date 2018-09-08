@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="ThemePlayground.Styles.DarkTheme"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:styles="clr-namespace:ThemePlayground.Styles">
+
+    <ResourceDictionary.MergedDictionaries>
+        <styles:BaseStyleResources />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  override some values form the base  -->
+    <x:String x:Key="ThemeName">Dark</x:String>
+
+
+    <x:String x:Key="BackgroundImage">https://thechive.files.wordpress.com/2017/10/f3a4c1c62d7f652a778ebbb10af33702.png</x:String>
+
+    
+
+
+    <Color x:Key="BackgroundColor">#111111</Color>
+    <Color x:Key="H1Color">#FF0000</Color>
+    <Color x:Key="BodyColor">#EEEEEE</Color>
+    <x:Double x:Key="BodySize">16</x:Double>
+</ResourceDictionary>

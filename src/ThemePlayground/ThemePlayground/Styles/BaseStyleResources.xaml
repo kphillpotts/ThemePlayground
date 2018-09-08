@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="ThemePlayground.Styles.BaseStyleResources"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:styles="clr-namespace:ThemePlayground.Styles">
+
+    <ResourceDictionary.MergedDictionaries>
+        <styles:BaseLiteralResources />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="H1Label" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource H1Color}" />
+        <Setter Property="FontSize" Value="{DynamicResource H1Size}" />
+    </Style>
+
+    <Style x:Key="BodyLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource BodyColor}" />
+        <Setter Property="FontSize" Value="{DynamicResource BodySize}" />
+    </Style>
+</ResourceDictionary>

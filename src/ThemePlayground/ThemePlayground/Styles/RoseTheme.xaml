@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="ThemePlayground.Styles.RoseTheme"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:styles="clr-namespace:ThemePlayground.Styles">
+
+    <ResourceDictionary.MergedDictionaries>
+        <styles:BaseStyleResources />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  override some values form the base  -->
+    <x:String x:Key="ThemeName">Rose</x:String>
+
+    <Color x:Key="BackgroundColor">#330000</Color>
+    <Color x:Key="H1Color">#FF0000</Color>
+    <Color x:Key="BodyColor">#CC0000</Color>
+    <x:Double x:Key="BodySize">16</x:Double>
+
+    <x:String x:Key="BackgroundImage">https://thechive.files.wordpress.com/2017/10/0cfb9eb5c2fc5638a5e2cab371fffb07.jpg</x:String>
+
+</ResourceDictionary>

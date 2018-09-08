@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="ThemePlayground.Styles.BaseLiteralResources"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <x:String x:Key="ThemeName">Base</x:String>
+
+    <Color x:Key="BackgroundColor">#333333</Color>
+    <x:String x:Key="BackgroundImage"></x:String>
+
+    <Color x:Key="H1Color">#222222</Color>
+    <x:Double x:Key="H1Size">44</x:Double>
+
+    <Color x:Key="BodyColor">#666666</Color>
+    <x:Double x:Key="BodySize">22</x:Double>
+</ResourceDictionary>

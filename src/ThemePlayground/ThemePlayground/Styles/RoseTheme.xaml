@@ -6,6 +6,7 @@
     xmlns:styles="clr-namespace:ThemePlayground.Styles">
 
     <ResourceDictionary.MergedDictionaries>
+        <styles:BaseLiteralResources />
         <styles:BaseStyleResources />
     </ResourceDictionary.MergedDictionaries>
 

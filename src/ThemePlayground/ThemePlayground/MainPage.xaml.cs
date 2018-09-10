@@ -14,6 +14,12 @@ namespace ThemePlayground
             InitializeComponent();
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            ThemePicker.SelectedItem = Settings.Theme;
+        }
+
         private void ThemePicker_SelectedIndexChanged(object sender, EventArgs e)
         {
             var picker = (Picker)sender;
@@ -21,10 +27,11 @@ namespace ThemePlayground
 
             if (selectedIndex != -1)
             {
-                Title = picker.Items[selectedIndex];
+                var themeName = picker.Items[selectedIndex];
 
-                ThemeHelper.ChangeTheme(picker.Items[selectedIndex]);
-
+                Title = themeName;
+                Settings.Theme = themeName;
+                ThemeHelper.ChangeTheme(themeName);
             }
         }
     }

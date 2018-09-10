@@ -16,7 +16,7 @@ namespace ThemePlayground
 
         protected override void OnStart()
         {
-            ThemeHelper.ChangeTheme("Light");
+            ThemeHelper.ChangeTheme(Settings.Theme);
         }
 
         protected override void OnSleep()

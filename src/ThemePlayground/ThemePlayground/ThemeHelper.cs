@@ -4,10 +4,15 @@ using Xamarin.Forms;
 
 namespace ThemePlayground
 {
-    internal static class ThemeHelper
+    public static class ThemeHelper
     {
-        internal static void ChangeTheme(string themeName)
+        public static string CurrentTheme;
+
+        public static void ChangeTheme(string theme)
         {
+            // don't change to the same theme
+            if (theme == CurrentTheme) return;
+
             // clear all the resources
             Application.Current.Resources.MergedDictionaries.Clear();
             Application.Current.Resources.Clear();
@@ -15,7 +20,7 @@ namespace ThemePlayground
             ResourceDictionary newTheme = null;
 
 
-            switch (themeName.ToLowerInvariant())
+            switch (theme.ToLowerInvariant())
             {
                 case "light":
                     newTheme = new LightTheme();
@@ -38,6 +43,7 @@ namespace ThemePlayground
 
             ManuallyCopyThemes(newTheme, applicationResourceDictionary);
 
+            CurrentTheme = theme;
         }
 
         private static void ManuallyCopyThemes(ResourceDictionary fromResource, ResourceDictionary toResource)

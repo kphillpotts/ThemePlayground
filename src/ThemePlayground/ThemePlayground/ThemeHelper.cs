@@ -44,6 +44,12 @@ namespace ThemePlayground
             ManuallyCopyThemes(newTheme, applicationResourceDictionary);
 
             CurrentTheme = theme;
+            var platformManager = DependencyService.Get<IPlatformThemeManager>();
+            if (platformManager != null)
+            {
+                platformManager.ChangeTheme(theme);
+            }
+
         }
 
         private static void ManuallyCopyThemes(ResourceDictionary fromResource, ResourceDictionary toResource)

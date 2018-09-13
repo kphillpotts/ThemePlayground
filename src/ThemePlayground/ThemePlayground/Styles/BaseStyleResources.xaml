@@ -18,4 +18,9 @@
         <Setter Property="TextColor" Value="{DynamicResource BodyColor}" />
         <Setter Property="FontSize" Value="{DynamicResource BodySize}" />
     </Style>
+
+    <Style TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="{DynamicResource BackgroundColor}"/>
+        <Setter Property="BarTextColor" Value="White"/>
+    </Style>
 </ResourceDictionary>

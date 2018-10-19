@@ -14,13 +14,18 @@
         <Setter Property="FontSize" Value="{DynamicResource H1Size}" />
     </Style>
 
+    <Style x:Key="H2Label" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource H2Color}" />
+        <Setter Property="FontSize" Value="{DynamicResource H2Size}" />
+    </Style>
+
     <Style x:Key="BodyLabel" TargetType="Label">
         <Setter Property="TextColor" Value="{DynamicResource BodyColor}" />
         <Setter Property="FontSize" Value="{DynamicResource BodySize}" />
     </Style>
 
     <Style TargetType="NavigationPage">
-        <Setter Property="BarBackgroundColor" Value="{DynamicResource BackgroundColor}"/>
-        <Setter Property="BarTextColor" Value="White"/>
+        <Setter Property="BarBackgroundColor" Value="{DynamicResource BackgroundColor}" />
+        <Setter Property="BarTextColor" Value="White" />
     </Style>
 </ResourceDictionary>

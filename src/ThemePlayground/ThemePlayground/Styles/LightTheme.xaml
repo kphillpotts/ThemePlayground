@@ -12,11 +12,13 @@
 
     <!--  override some values form the base  -->
     <x:String x:Key="ThemeName">Light</x:String>
-    <x:String x:Key="BackgroundImage">https://thechive.files.wordpress.com/2017/10/7de5222033964f81f606f91d5349ea0e-wade-wilson-wolverine.jpg</x:String>
-    
+    <x:String x:Key="BackgroundImage">Light.png</x:String>
+
+    <Thickness x:Key="PagePadding">40</Thickness>
+
 
     <Color x:Key="BackgroundColor">#EEEEEE</Color>
     <Color x:Key="H1Color">#00FF00</Color>
-    <Color x:Key="BodyColor">#000000</Color>
+    <Color x:Key="BodyColor">yellow</Color>
     <x:Double x:Key="BodySize">16</x:Double>
 </ResourceDictionary>

@@ -6,27 +6,31 @@
     xmlns:local="clr-namespace:ThemePlayground"
     BackgroundColor="{DynamicResource BackgroundColor}">
 
-
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
+        <Image Aspect="AspectFill" Source="{DynamicResource BackgroundImage}" />
 
-        <StackLayout Grid.Row="0">
+        <StackLayout Grid.Row="0" Padding="{DynamicResource PagePadding}">
             <!--  Place new controls here  -->
             <Label
                 x:Name="ThemeDisplayName"
                 Style="{DynamicResource H1Label}"
                 Text="{DynamicResource ThemeName}" />
-            <Label Style="{DynamicResource BodyLabel}" Text="Body" />
+
+            <Label Style="{DynamicResource H2Label}" Text="Heading 2 Style" />
+
+            <Label Style="{DynamicResource BodyLabel}" Text="Ugh air plant austin, pug godard church-key typewriter locavore. Everyday carry hammock vape letterpress bespoke food truck. Viral butcher cloud bread skateboard schlitz. Woke man bun tousled vinyl cold-pressed jianbing. Kombucha cronut four loko crucifix literally locavore. Quinoa synth subway tile blog meggings, trust fund cloud bread you probably haven't heard of them selfies retro. Portland sustainable cloud bread pitchfork vaporware." />
+
         </StackLayout>
 
-        <Image Grid.Row="1" Source="{DynamicResource BackgroundImage}" Aspect="AspectFill" />
-
-        <StackLayout Grid.Row="2" Orientation="Horizontal" Padding="10">
+        <StackLayout
+            Grid.Row="1"
+            Padding="10"
+            Orientation="Horizontal">
             <Picker
                 x:Name="ThemePicker"
                 Title="Select a theme"

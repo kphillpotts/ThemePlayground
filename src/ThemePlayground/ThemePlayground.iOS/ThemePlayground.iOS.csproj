@@ -160,4 +160,10 @@
       <Name>ThemePlayground</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Light.png" />
+  </ItemGroup>
 </Project>

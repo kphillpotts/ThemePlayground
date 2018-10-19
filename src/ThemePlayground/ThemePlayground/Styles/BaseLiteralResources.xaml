@@ -5,13 +5,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <x:String x:Key="ThemeName">Base</x:String>
+    <x:Double x:Key="PagePadding">20</x:Double>
 
+    <!--  Background  -->
     <Color x:Key="BackgroundColor">#333333</Color>
-    <x:String x:Key="BackgroundImage"></x:String>
+    <x:String x:Key="BackgroundImage" />
 
+    <!--  H1  -->
     <Color x:Key="H1Color">#222222</Color>
     <x:Double x:Key="H1Size">44</x:Double>
 
+    <!--  H2  -->
+    <Color x:Key="H2Color">Red</Color>
+    <x:Double x:Key="H2Size">14</x:Double>
+
+    <!--  Body  -->
     <Color x:Key="BodyColor">#666666</Color>
     <x:Double x:Key="BodySize">22</x:Double>
+
+
 </ResourceDictionary>
